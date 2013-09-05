@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="headerTextColor">#168686</color>
+    <color name="primaryTextColor">#333333</color>
+    <color name="secondaryTextColor">#777777</color>
+
+    <color name="goblinGreen">#168686</color>
+    <color name="headerDividerColor">#000000</color>
+    <color name="dividerColor">#E0E0E0</color>
+</resources>

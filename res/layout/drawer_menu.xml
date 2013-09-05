@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+	style="@style/listViewItem"
+	>
+    
+	<View
+        android:id="@+id/item_separator"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dividerHeight"
+        android:background="@color/dividerColor"
+        />
+	
+	<ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"/>
+	
+    <TextView
+        android:textIsSelectable="false"
+        android:id="@+id/list_item"
+        android:layout_toRightOf="@id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        style="@style/listViewPrimaryDetail"
+        />
+    
+</RelativeLayout>

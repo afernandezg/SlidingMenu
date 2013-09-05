@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PPOB Android</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="labelDashboard">Dashboard</string>
+    <string name="labelTagihan">Tagihan</string>
+    <string name="labelTopup">Topup</string>
+    <string name="labelCeksaldo">Cek Saldo</string>
+    <string name="labelHistory">Hostory Transaksi</string>
+    <string name="labelInfo">Info User</string>
+    <string name="labelLogout">Logout</string>
+
+</resources>
