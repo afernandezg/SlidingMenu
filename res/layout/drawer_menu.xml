@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity"
     android:layout_width="match_parent"
+    android:background="@drawable/background_selector"
 	style="@style/listViewItem"
 	>
     
