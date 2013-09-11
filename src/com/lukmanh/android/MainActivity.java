@@ -2,8 +2,11 @@ package com.lukmanh.android;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.Fragment;
 import android.app.FragmentTransaction;
+import android.content.ClipData.Item;
 import android.content.Context;
+import android.content.DialogInterface.OnClickListener;
 import android.content.res.Configuration;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.view.GravityCompat;
@@ -16,6 +19,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
+import android.widget.Checkable;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -125,6 +129,7 @@ public class MainActivity extends Activity {
 		public void onItemClick(AdapterView<?> parent, View view, int position,
 				long id) {
 			selectItem(position);
+			view.setActivated(false);
 		}
 	}
 	
@@ -134,11 +139,14 @@ public class MainActivity extends Activity {
 		public void onItemClick(AdapterView<?> parent, View view, int position,
 				long id) {
 			selectItemRight(position);
+			view.setActivated(false);
 		}
 	}
 	
 	private void selectItem(int position) {
 		//update the main content by replacing fragments
+		
+		
 		FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
 		
 		switch (position) {
@@ -161,11 +169,16 @@ public class MainActivity extends Activity {
 			
 			case 6:
 				getActionBar().setTitle(R.string.labelHistory);
-				break;		
+				break;
+				
 		}
+		
+		
+		
 		
 		fragmentTransaction.commit();
 		mDrawerList.setItemChecked(position, true);
+		
 //		setTitle(mPlanetTitles[position]);
 		mDrawerLayout.closeDrawer(mDrawerList);
 	}
