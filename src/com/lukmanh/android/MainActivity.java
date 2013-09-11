@@ -129,7 +129,6 @@ public class MainActivity extends Activity {
 		public void onItemClick(AdapterView<?> parent, View view, int position,
 				long id) {
 			selectItem(position);
-			view.setActivated(false);
 		}
 	}
 	
@@ -139,7 +138,6 @@ public class MainActivity extends Activity {
 		public void onItemClick(AdapterView<?> parent, View view, int position,
 				long id) {
 			selectItemRight(position);
-			view.setActivated(false);
 		}
 	}
 	
